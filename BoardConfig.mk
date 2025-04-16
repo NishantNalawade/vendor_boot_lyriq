@@ -142,7 +142,7 @@ PLATFORM_VERSION := 16.1.0
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD    := true
 TW_INCLUDE_RESETPROP := true
-TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/vendor/lib/modules)\")
+TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules)\")
 
 # TWRP Configuration
 # # Screen
