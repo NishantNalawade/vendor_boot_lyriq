@@ -44,6 +44,9 @@ PRODUCT_PACKAGES += \
 # Copy modules for depmod
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*.ko,$(DEVICE_PATH)/recovery/root/lib/modules,$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules)
 
+PRODUCT_COPY_FILES += \
+    $(TARGET_PREBUILT_DTB):$(PRODUCT_OUT)/dtb.img
+
 #PRODUCT_STATIC_BOOT_CONTROL_HAL := \
 #    bootctrl.mt6893 \
 #    libgptutils \
