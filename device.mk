@@ -42,7 +42,7 @@ PRODUCT_PACKAGES += \
     bootctrl.mt6893
 
 # Copy modules for depmod
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*.ko,$(DEVICE_PATH)/recovery/root/lib/modules,$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*.ko,device/motorola/lyriq/recovery/root/lib/modules,$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules)
 
 PRODUCT_COPY_FILES += \
     $(TARGET_PREBUILT_DTB):$(TARGET_COPY_OUT_RECOVERY)/root/dtb.img
