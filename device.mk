@@ -6,6 +6,7 @@
 #
 
 LOCAL_PATH := device/motorola/lyriq
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
